@@ -42,9 +42,7 @@
 ## Rotas importantes do projeto
 
 
-- **Rota de relatórios (`/relatorios`)**: Permite a visualização de relatórios e estatísticas do sistema.
 - **Rota de autenticação (`/login`)**: Permite que os usuários façam login no sistema.
 - **Rota de cadastro (`/cadastrar`)**: Permite que novos usuários se cadastrem no sistema.
-- **Rota de API (`/api`)**: Endpoint para interagir com a API do projeto. Consulte a documentação da API para detalhes sobre os métodos disponíveis.
 
 Certifique-se de verificar o código-fonte ou a documentação adicional para mais informações sobre rotas e funcionalidades específicas.
