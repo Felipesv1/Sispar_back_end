@@ -9,6 +9,11 @@ bp_reembolso  = Blueprint('reembolso', __name__, url_prefix='/reembolso')
 # Rota de visualizacao de todos os reembolsos -> GET
 @bp_reembolso.route('/todos-reembolsos', methods=['GET'])
 def visualizar_todos_os_reembolsos():
+    num_prestacoes = request.args.get('num_prestacao', type=int)
+    query = db.select(Reembolso)
+    
+    if num_prestacoes:
+        query = query.filter(Reembolso.num_prestacoes == num_prestacoes)
     reembolsos = db.session.execute(
         db.select(Reembolso)
     ).scalars().all()
